@@ -14,17 +14,6 @@
 <body>
 
 
-<script>
-	fetch('https://github.com/ajpessoa/ajpessoa.github.io/blob/main/variables.json')
-	.then(function (response) {
-		response.setHeader("Access-Control-Allow-Origin", "*");
-		return response.json()		
-	})
-	.then(function (data) {
-		console.log(data.Name)
-	});
-</script>
-
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar" id="myNavbar">
