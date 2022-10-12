@@ -17,7 +17,7 @@
 <script>
 	fetch('https://github.com/ajpessoa/ajpessoa.github.io/blob/main/variables.json')
 	.then(function (response) {
-		console.log(response.json);
+		response.setHeader("Access-Control-Allow-Origin", "*");
 		return response.json()		
 	})
 	.then(function (data) {
