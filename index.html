@@ -17,7 +17,8 @@
 <script>
 	fetch('https://github.com/ajpessoa/ajpessoa.github.io/blob/main/variables.json')
 	.then(function (response) {
-		return response.json()
+		console.log(response.json);
+		return response.json()		
 	})
 	.then(function (data) {
 		console.log(data.Name)
